@@ -1,0 +1,44 @@
+[2018-10-21 00:30:49,785] [root] [logger.py -> logger -> wrapper:46] [ERROR] There was an exception in  parse_csv_and_get_columns
+Traceback (most recent call last):
+  File "C:/Users/gjain7/Desktop/mip-python/mip-python/src/logexception/parsecsv.py", line 10, in parse_csv_and_get_columns
+    csvFile = open(filename, 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/flights.csv'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gjain7\Desktop\mip-python\mip-python\src\logexception\logger.py", line 41, in wrapper
+    return function(*args, **kwargs)
+  File "C:/Users/gjain7/Desktop/mip-python/mip-python/src/logexception/parsecsv.py", line 19, in parse_csv_and_get_columns
+    raise ApplicationException('Application Exception occured while parsing file','APP001') from err
+src.logexception.exceptionhandler.ApplicationException: Application Exception occured while parsing file
+[2018-10-21 00:34:35,802] [root] [logger.py -> logger -> wrapper:46] [ERROR] There was an exception in  parse_csv_and_get_columns
+Traceback (most recent call last):
+  File "C:/Users/gjain7/Desktop/mip-python/mip-python/src/logexception/parsecsv.py", line 15, in parse_csv_and_get_columns
+    test_str_div = val[0] / val[11]
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gjain7\Desktop\mip-python\mip-python\src\logexception\logger.py", line 41, in wrapper
+    return function(*args, **kwargs)
+  File "C:/Users/gjain7/Desktop/mip-python/mip-python/src/logexception/parsecsv.py", line 19, in parse_csv_and_get_columns
+    raise ApplicationException('Application Exception occured while parsing file','APP001') from err
+src.logexception.exceptionhandler.ApplicationException: Application Exception occured while parsing file
+[2018-10-21 00:35:06,941] [root] [logger.py -> logger -> wrapper:46] [ERROR] There was an exception in  parse_csv_and_get_columns
+[2018-10-21 00:39:10,615] [root] [logger.py -> logger -> wrapper:46] [ERROR] Application Exception occured while parsing file
+[2018-10-21 00:40:01,380] [root] [logger.py -> logger -> wrapper:46] [ERROR] Application Exception occured while parsing file
+[2018-10-21 00:47:15,349] [root] [parsecsv.py -> parsecsv -> parse_csv_and_get_columns:20] [ERROR] unsupported operand type(s) for /: 'str' and 'str'
+[2018-10-21 00:48:25,907] [root] [logger.py -> logger -> wrapper:46] [ERROR] There was an exception in  parse_csv_and_get_columns
+[2018-10-21 00:52:18,434] [root] [logger.py -> logger -> wrapper:45] [ERROR] unsupported operand type(s) for /: 'str' and 'str'
+[2018-10-21 00:53:06,969] [root] [logger.py -> logger -> wrapper:45] [ERROR] <traceback object at 0x0000000002F1F288>
+[2018-10-21 00:53:34,175] [root] [logger.py -> logger -> wrapper:45] [ERROR] <class 'src.logexception.exceptionhandler.ApplicationException'>
+[2018-10-21 01:13:41,237] [root] [logger.py -> logger -> wrapper:46] [ERROR] There was an exception in  parse_csv_and_get_columns
+[2018-10-21 01:15:59,454] [root] [logger.py -> logger -> wrapper:48] [ERROR] There was an exception in  parse_csv_and_get_columns__main__
+[2018-10-21 01:28:34,444] [root] [logger.py -> logger -> wrapper:48] [ERROR] There was an exception in  parse_csv_and_get_columns__main__APP001
+[2018-10-21 01:29:27,331] [root] [logger.py -> logger -> wrapper:48] [ERROR] There was an exception in  parse_csv_and_get_columns__main__Application Exception occurred while parsing file
+[2018-10-21 01:32:34,485] [root] [logger.py -> logger -> wrapper:48] [ERROR] There was an exception inside module [__main__], Exception inside function [parse_csv_and_get_columns]Application Exception occurred while parsing file
+[2018-10-21 01:33:30,598] [root] [logger.py -> logger -> wrapper:48] [ERROR] There was an exception inside module [__main__], function [parse_csv_and_get_columns] with error message: Application Exception occurred while parsing file
+[2018-10-21 01:36:32,579] [root] [logger.py -> logger -> wrapper:49] [ERROR] There was an exception inside module [__main__], Class [<class 'function'>], function [parse_csv_and_get_columns] with error message: Application Exception occurred while parsing file
+[2018-10-21 01:39:05,841] [root] [logger.py -> logger -> wrapper:48] [ERROR] There was an exception inside module [__main__], function [parse_csv_and_get_columns] with error message: Application Exception occurred while parsing file
